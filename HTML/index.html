@@ -1,0 +1,141 @@
+<!-- Home Page By default -->
+
+<!DOCTYPE html>     <!--Tells browser you are using HTML5-->
+<html lang="en">    <!--Root of HTML document-->
+<head>    <!--container for metadata-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">    <!--Ensures responsive website a/c to screen size-->
+    <title>Document</title>
+</head>
+<hr>        <!--Horizontal Ruler-->
+
+<style>
+    table, th, td{
+        border-style: solid;
+        border-collapse: collapse;
+        border-width: thin;
+    }
+</style>
+
+<body>      <!--contains all data rendered by browser-->
+    <header style="text-align: center;"><h1>Learning HTML tags</h1></header>
+    <main>
+        <section> <Big style="text-align: center;">Level-1:</Big>
+            <h1>Hello World!</h1><hr>
+            <p>This is a paragraph</p><hr>
+            <a href="https://www.google.com">Google</a><br/>   <!--Absolute link-->
+            <a href="/Hello.html">click here</a>  <!--Relative link-->
+            /
+            <a href="/Hello.html" target="_main">open in new tab</a><br/>
+            <a href="https://www.google.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUE0AGU_K7vzHl6xGm2TvwBd1qnCojpGKMQ&s"
+                                                  alt="Google logo"
+                                                  width="100"></a>
+            <hr>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM3v72i9g9Lye7DmqVfAK7rXZWPTCyaNItwQ&s" 
+                 alt="Random image" 
+                 height="100">
+        </section>
+        <br/><br/>
+        <section> <Big>Level-2:</Big>
+            <p>
+                <b>Bold</b><br/>
+                <i>Italic</i><br/>
+                <u>Underline</u><br/>
+                <big>Big</big><br/>
+                <small>Small</small><br/>
+                <hr>
+                <h6 style="text-align: center;">Subscript and Superscript</h6>
+                H<sub>2</sub>O    <!--Subscript-->
+                <br/>
+                a<sup>2</sup>+b<sup>2</sup>
+                <hr> 
+                <h5> pre tag Vs p tag</h5>
+                <h6>p tag</h6>
+                <p>Hello      My Name   
+                    Is Akanksha</p>     <!--Removes extra spaces/ new line-->
+                <h6>pre tag</h6>
+                <pre>Hello      My Name   
+                    Is Akanksha</pre>   <!--Prnts text as it is along with extra spaces and new line-->
+                <hr>
+            </p>   
+        </section> 
+        <article>Inside main tag: Section tag, Article tag and Aside tag</article>
+        <!--This content is created using aside tag. It tells HTML that this content is not the part of main content. Example- adds-->
+        <aside>This is an ad</aside> 
+
+        <hr>
+        <div style="background-color: aquamarine;">    
+            This is div tag. 
+            It acts as a container for other elements. 
+            It is a block elements. 
+            It takes full width.
+        </div>
+        <br/>
+        <span style="background-color: bisque;">
+            This is span tag. 
+            It also act as a container for other elements. 
+            Inline element 
+            It takes width as per size
+        </span>
+        <hr>
+        <h4 style="text-align: center;">HTML Lists</h4>
+        <h5>Unordered List</h5>
+        <ul style="list-style: square;">
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>banana</li>
+        </ul>
+        <h5>Ordered List</h5>
+        <ol>
+            <li>Red</li>
+            <li>Yellow</li>
+            <li>Yellow</li>
+        </ol>
+        <hr>
+        <h4 style="text-align: center;">Table</h4>
+        <table>
+            <thead>
+            <caption>Employee Data</caption>
+            <tr>
+                <th colspan="2">INFORMATION</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Tom</td>
+                <td>Development</td>
+            </tr>
+            <tr>
+                <td>Jack</td>
+                <td>Marketing</td>
+            </tr>
+            <tr>
+                <td>Chris</td>
+                <td>HR</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <hr>
+        <h4>HTML Form</h4>
+
+        <form>  <!--action property tells where the data filed in the form will go-->
+            Name:
+            <input type="text" placeholder="Enter Name"><br/>
+            Password:
+            <input type="password" placeholder="Enter password"><br/>
+            Choose One:<br/>
+            <input type="radio" value="Male" name="gender">male<br/>
+            <input type="radio" value="Female" name="gender">female<br/>
+            <input type="checkbox" value="Red" name="colour">Red<br/>
+        </form>
+        
+    </main>
+    <Footer style="text-align: center;"><h1>Thankyou</h1></Footer>
+</body>
+</HTML>      <!--HTML code is not code sensitive-->

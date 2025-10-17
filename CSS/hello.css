@@ -1,0 +1,37 @@
+#div1 {
+    /* display:block; */
+     /* display:flexbox; */
+     /* display:flow-root; */
+     /* display:inline; */
+     /* display:inline-flexbox; */
+     /* display:inline-table; */
+     /* display:list-item; */
+
+    /* display:flex; */
+    /* display:inline-flex; */
+
+    /* display:contents; */
+    /* display:grid; */
+    /* display:inline-block; */
+
+    /*Gree padding*/
+    padding-left: 25px;
+    padding-right:50px;
+    padding-top:25px;
+    padding-bottom:50px;
+
+    /*Orange margin*/
+    margin-top: 50px;   
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 25px;
+
+    color:cadetblue;
+    font-size: large;
+    font-weight: bold;
+    float: left;
+    border: 3px;
+    width: 200px;
+    height:200px;
+    text-align: center;
+}
