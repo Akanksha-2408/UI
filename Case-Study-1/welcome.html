@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+
+    <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styling.css">
+
+</head>
+<body>
+    <h1 id="welcome">Welcome !!!</h1>
+    <form id = "welcome-form" class = "form" action="/submit" method="post">
+        <div class="form-check">
+            <p>Enter your Choice:</p>
+            <label>
+                <input type="radio" name="accountChoice" value="new">
+                New Account
+            </label><br/>
+            <label>
+                <input type="radio" name="accountChoice" value="existing">
+                Existing Account
+            </label><br/><br/>
+            <button type = "submit" class="btn btn-primary w-100 mt-4">Submit</button>
+        </div>
+    </form>
+
+    <script src="bootstrap-5.3.8-dist\js\bootstrap.bundle.min.js"></script>
+    <script src="welcome.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa; /* Light Gray Background */
+}
+#welcome {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color:black; /* Bootstrap Primary Blue */
+}
+.form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}

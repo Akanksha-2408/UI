@@ -1,0 +1,54 @@
+#heading1 {
+    text-align: center;
+    background-color: lightblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#form {
+    background-color: orchid;
+
+    /* form size */
+    width: 400px;
+    height: 130px;
+
+    text-align: center;
+    padding-top: 20px;
+
+    /* form placement according to screen size */
+
+    position:absolute;  /* fixed - makes the form stay in the same place even when scrolling */
+                     /* absolute - makes the form stay in the same place relative to the nearest positioned ancestor */
+                     /* relative - makes the form stay in the same place relative to its normal position */
+                     /* static - default value, the form is positioned according to the normal flow of the page */  
+                     /* sticky - makes the form stick to a given position as you scroll */   
+             /*fixed Vs sticky - fixed: permanently fixed to a position on the screen 
+                                 sticky: fix until a certain scroll point (X)
+                                         do not adjust a/c to screen size*/                 
+    
+    /* To bring element at the exact center */
+    top:50%;
+    left:50%;
+        /* with top and left only: top-left corner comes to center
+                                   form goes to right and downwards */
+    transform: translate(-50%, -50%);
+        /* translate(x-axis, y-axis): pushes 50% towards left 
+                                      pushes 50% upwards */          
+    
+}
+#content {
+    width: 80%;
+    margin-top: 500px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+#table {
+    margin-top: 20px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    width:40%;
+}

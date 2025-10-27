@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+</head>
+<body>
+    <form id="option-form" action="/submit" method="post">
+        <div class="form form-check">
+            <p id="welcome-message"> WELCOME {$name} </p>
+            <p>Enter your Choice: </p> 
+            <div>
+            <label>
+                <input type="radio" name="transaction" value="deposit">
+                Deposit
+            </label><br/> 
+            <label>
+                <input type="radio" name="transaction" value="withdraw">
+                Withdraw
+            </label><br/> 
+            <label>
+                <input type="radio" name="transaction" value="transfer">
+                Transfer Money
+            </label><br/> 
+            <label>
+                <input type="radio" name="transaction" value="checkBalance">
+                Check Balance
+            </label>
+            </div><br/>
+            <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
+        </div>
+    </form>
+    <script src="options.js"></script>
+</body>
+</html>

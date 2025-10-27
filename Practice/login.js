@@ -24,6 +24,7 @@ function redirectToHome() {
 }
 
 $(document).ready(function() {
+    $('#table').DataTable();
     $('#form').submit(function(event) {
         let isValid = true;
         const emailValue = $('#email').val().trim();
