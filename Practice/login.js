@@ -24,7 +24,7 @@ function redirectToHome() {
 }
 
 $(document).ready(function() {
-    $('#table').DataTable();
+    $('#table').DataTable();  //what is Server side and client side 
     $('#form').submit(function(event) {
         let isValid = true;
         const emailValue = $('#email').val().trim();

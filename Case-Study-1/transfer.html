@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <form id="transfer-form" class="form" action="/submit" method="post">
+        <div>
+            <p>Transfer Money</p>
+            <label for="toAccount">Enter Recipient Account Number:</label><br>
+            <input type="text" id="toAccount" name="toAccount"><br><br>
+            <label for="amount">Enter Amount to Transfer:</label><br>
+            <input type="number" id="amount" name="amount"><br><br>
+            <button id="transferButton" class="btn-primary">Transfer Money</button>
+        </div>
+    </form>    
+    <script src="transfer.js"></script>
+</body>
+</html>
