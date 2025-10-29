@@ -9,7 +9,7 @@
 <body>
     <form id="transfer-form" class="form" action="/submit" method="post">
         <div>
-            <p>Transfer Money</p>
+            <h1 id="welcome">Withdraw Money</h1>
             <label for="toAccount">Enter Recipient Account Number:</label><br>
             <input type="text" id="toAccount" name="toAccount"><br><br>
             <label for="amount">Enter Amount to Transfer:</label><br>
@@ -17,6 +17,7 @@
             <button id="transferButton" class="btn-primary">Transfer Money</button>
         </div>
     </form>    
+    <button class="btn-primary" onClick="window.location.href='options.html'">Back to Main Menu</button>
     <script src="transfer.js"></script>
 </body>
 </html>

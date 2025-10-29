@@ -28,6 +28,9 @@ document.getElementById('transfer-form').addEventListener('submit', function(eve
         return response.text();
     })
     .then(_result=> {
+        const oldBalance = parseFloat(sessionStorage.getItem("balance"));
+        const newBalance = oldBalance - parsedAmount;
+        sessionStorage.setItem("balance", newBalance.toFixed(2));
         alert(`Successfully transferred ${amount} to account number ${toAccount}`);     
         window.location.href = 'options.html';
     })

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function(){
+                $(this).css("color","purple")
+            });
+            $('#mouse').mouseenter(function(){
+                $(this).css("color", "white")
+            })
+            $('#mouse').mouseleave(function(){
+                $(this).css("color","black")
+            })
+            $('#mouseover').mouseover(function(){
+                $(this).css("color","green")
+            })
+            $('#mouseout').mouseout(function(){
+                $(this).css("color","red")
+            })
+            $('#mouseleave').mouseleave(function(){
+                $(this).css("color","grey")
+            })
+        });
+
+        $(document).keydown(function(){
+            alert("keydown event triggered")
+        })
+
+        $(document).keypress(function(){
+            alert("keypress event triggered")
+        })
+    </script>
+
+    <style>
+        p, #mouse, #mouseover, #mouseout, #mouseleave {
+            display: block;
+            width: 300px;
+            padding: 20px;
+            font-size: 30px;
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <!-- click on this method -->
+        <p onclick="alert('click event')">
+            Event
+        </p>
+    </center>
+
+    <div id="mouse">
+        testing mouseenter and mouseleave events
+    </div>
+
+    <div id="mouseover">
+        mouseover event
+    </div>
+
+    <div id="mouseout">  <!--More detailed-->
+        mouseout event Parent
+        <p>Child 1
+        </p>
+    </div>
+
+    <div id="mouseleave">
+        mouseleave event Parent
+        <p>Child 1
+        </p>
+    </div>
+
+</body>
+
+</html>

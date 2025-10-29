@@ -6,7 +6,7 @@ body {
     text-align: left;
     min-height: 100vh;
     margin: 0;
-    background-color: aquamarine;
+    background-color:aquamarine;
 }
 #welcome {
     font-size: 3rem;
@@ -49,4 +49,18 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.2rem;
+}
+
+#history {
+    /* margin-top: 100px; */
+    border-style: solid;
+    font-size:medium;
+}
+
+#history th, #history td {
+    border-style: solid;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
 }

@@ -16,6 +16,9 @@ document.getElementById("withdraw-form").addEventListener("submit", function(eve
         return response.json();
     })
     .then(_result=> {
+        const oldBalance = parseFloat(sessionStorage.getItem("balance"));
+        const newBalance = oldBalance - withdrawAmount;
+        sessionStorage.setItem("balance", newBalance.toFixed(2));
         alert(`Successfully withdrew ${withdrawAmount} from account number ${accountNumber}`);
         window.location.href = 'options.html';
     })

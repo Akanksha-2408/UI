@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Options</title>
     <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.min.css">
+
 </head>
 <body>
     <h1 id="welcome-message"> WELCOME {$name}</h1>
@@ -15,10 +17,26 @@
         <button type="button" class="btn" onclick="window.location.href='checkBalance.html'">Check Balance</button>
     </div><br/>
     <div>
-        <button type="submit" class="btn-primary">Submit</button> 
-        <button type="button" class="btn-primary" onclick="window.location.href='welcome.html'">Logout</button>
+        <button type="button" class="btn-primary" onclick="window.location.href='welcome.html'">Logout</button><br/><br/><br/>
     </div>   
 
+    <table id="history">
+        <thead>
+            <tr>
+                <!-- <th>ID</th> -->
+                <th>Account Number</th>
+                <th>Name</th>
+                <th>Balance</th>
+                <th>Pin</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
     <script src="options.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/2.0.0/js/dataTables.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
 </body>
 </html>
